@@ -4,7 +4,7 @@ taking a screenshot every set amount of time (1 second), then processing the ima
 and finally using Tesseract to recognize letters in the image, in this case we want to recognize the red text **YOU DIED** which appears 
 after dying in the game.<br><br>
 **But why do this ?**<br>
-Well, I use [Streamlabs](https://streamlabs.com/) to stream and just by adding a text source with a reference 
+I use [Streamlabs](https://streamlabs.com/) and just by adding a text source with a reference 
 to the text file that this script updates I can show/update my deaths while streaming. Here is a [video](https://youtu.be/n8PW8lvOfaI?t=17809) showcasing this integration at the bottom left of the screen you can see the death counter is updated automatically after dying.
 
 
