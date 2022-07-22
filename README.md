@@ -25,7 +25,7 @@ after dying in the game.
 - [opencv-contrib-python](https://pypi.org/project/opencv-contrib-python/)
 - [pytesseract](https://pypi.org/project/pytesseract/) (python wrapper for Tesseract binary)
 ### Binaries:
-- [tesseract](https://github.com/UB-Mannheim/tesseract/wiki) (Tesseract binary)
+- [tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 
 ## Steps:
 
