@@ -55,20 +55,19 @@ def has_died(tesseract_binary_location):
     return "YOU DIED" in pytesseract.image_to_string(output_hsv)
 
 
-if __name__ == '__main__':
-    fileName = 'deaths.txt'
-    tesseractBinaryLocation = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-    isDead = False
+fileName = 'deaths.txt'
+tesseractBinaryLocation = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+isDead = False
 
-    while True:
+while True:
 
-        if has_died(tesseractBinaryLocation):
-            isDead = True
-            add_death_to_counter(fileName)
-            print(f'Oh no! Deaths: {get_deaths(fileName)}')
+    if has_died(tesseractBinaryLocation):
+        isDead = True
+        add_death_to_counter(fileName)
+        print(f'Oh no! Deaths: {get_deaths(fileName)}')
 
-            while isDead:
-                isDead = has_died(tesseractBinaryLocation)
-                time.sleep(1)
+        while isDead:
+            isDead = has_died(tesseractBinaryLocation)
+            time.sleep(1)
 
-        time.sleep(1)
+    time.sleep(1)
