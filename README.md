@@ -1,5 +1,5 @@
 # Death counter/recognizer for Soulslike Games
-This small Python script updates a text file every time a death in Dark Souls: Remaster. This works by 
+This small Python script updates a text file every time you die in a soulslike game. This works by 
 taking a screenshot every set amount of time (1 second), then processing the image by applying a red channel filter 
 and finally using Tesseract to recognize letters in the image, in this case we want to recognize the red text **YOU DIED** which appears 
 after dying in the game.
