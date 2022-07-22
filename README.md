@@ -18,6 +18,8 @@ after dying in the game.
 
 ## Dependencies:
 
+- [Python](https://www.python.org/downloads/) duh
+### Libraries:
 - [numpy](https://pypi.org/project/numpy/)
 - [opencv-contrib-python](https://pypi.org/project/opencv-contrib-python/)
 - [pytesseract](https://pypi.org/project/pytesseract/) (python wrapper for Tesseract binary)
