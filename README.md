@@ -28,7 +28,7 @@ to the text file that this script updates I can show/update my deaths while stre
 - [opencv-contrib-python](https://pypi.org/project/opencv-contrib-python/)
 - [pytesseract](https://pypi.org/project/pytesseract/) (python wrapper for Tesseract binary)
 ### Binaries:
-- [tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
+- [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 
 ## Steps:
 
