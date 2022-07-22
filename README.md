@@ -30,6 +30,8 @@ after dying in the game.
 ## Steps:
 
 1) Clone repo.
-2) Install dependencies.
-3) Configure fileName and tesseractBinaryLocation variables accordingly.
-4) Run script 
+2) Install Python.
+3) Install Tesseract binary.
+4) Install Python libraries.
+5) Configure fileName and tesseractBinaryLocation variables in main.py
+6) Run script 
