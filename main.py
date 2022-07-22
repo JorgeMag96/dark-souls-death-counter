@@ -4,28 +4,31 @@ import numpy as np
 import pytesseract
 import time
 
+fileName = 'deaths.txt'
+tesseractBinaryLocation = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
-def get_deaths(file_name):
+
+def get_deaths():
     try:
-        f = open(file_name, mode='r')
+        f = open(fileName, mode='r')
         deaths = int(f.read().split(": ")[1])
         f.close()
         return deaths
     except FileNotFoundError:
-        f = open(file_name, mode='x')
+        f = open(fileName, mode='x')
         f.write('deaths: 0')
         return 0
 
 
-def add_death_to_counter(file_name):
-    deaths = str(get_deaths(file_name) + 1)
-    f = open(file_name, mode='w')
+def add_death_to_counter():
+    deaths = str(get_deaths() + 1)
+    f = open(fileName, mode='w')
     f.write("deaths: " + deaths)
     f.close()
 
 
-def has_died(tesseract_binary_location):
-    pytesseract.pytesseract.tesseract_cmd = tesseract_binary_location
+def has_died():
+    pytesseract.pytesseract.tesseract_cmd = tesseractBinaryLocation
     image = pyautogui.screenshot(region=(780, 500, 1000, 500))
     image = cv.cvtColor(np.array(image), cv.COLOR_RGB2BGR)
 
@@ -55,19 +58,16 @@ def has_died(tesseract_binary_location):
     return "YOU DIED" in pytesseract.image_to_string(output_hsv)
 
 
-fileName = 'deaths.txt'
-tesseractBinaryLocation = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 isDead = False
-
 while True:
 
-    if has_died(tesseractBinaryLocation):
+    if has_died():
         isDead = True
-        add_death_to_counter(fileName)
-        print(f'Oh no! Deaths: {get_deaths(fileName)}')
+        add_death_to_counter()
+        print(f'Oh no! Deaths: {get_deaths()}')
 
         while isDead:
-            isDead = has_died(tesseractBinaryLocation)
+            isDead = has_died()
             time.sleep(1)
 
     time.sleep(1)
