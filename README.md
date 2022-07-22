@@ -6,6 +6,7 @@ after dying in the game.
 
 ## Compatible games:
 
+- Demon's Souls
 - Dark Souls
 - Dark Souls: Remastered
 - Dark Souls 2
