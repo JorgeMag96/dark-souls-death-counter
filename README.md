@@ -13,7 +13,7 @@ after dying in the game.
 - Bloodborne
 - Elden Ring
 
-**Note:** You'll need to adjust the screenshot region depending on the game and resolution of your monitor.
+**Note:** You'll need to [adjust the screenshot region](https://github.com/JorgeMag96/dark-souls-death-counter/blob/3b7c24c49c60ab40fec533045e7e38b7e0be4afb/main.py#L59) depending on the game and resolution of your monitor.
 <br> I will add game/resolution profiles in the future to make this step easier.
 
 ## Dependencies:
