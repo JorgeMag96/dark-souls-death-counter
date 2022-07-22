@@ -37,4 +37,5 @@ to the text file that this script updates I can show/update my deaths while stre
 3) Install Tesseract binary.
 4) Install Python libraries.
 5) Configure fileName and tesseractBinaryLocation variables in main.py
-6) Run script 
+6) Run script
+7) Play soulslike games !!!
